@@ -1,3 +1,26 @@
+
+body>p {
+    padding: 2em;
+}
+
+body>h2 {
+    text-align: center;
+}
+
+.imageDivider{
+    height: 222px;
+    background-position: center;
+    background-size: cover;
+}
+
+.imageDivider.massage{
+    background-image: url('/Assets/massage.png');
+}
+
+.imageDivider.knee {
+    background-image: url('/Assets/knee.png');
+}
+
 /* Practitioners Section Styling */
 .practitioner-list {
     display: flex;
