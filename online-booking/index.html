@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Your Osteopathy Appointment Online in Greensborough | Embody Osteopathy - Schedule Now</title>
+    <link rel="stylesheet" href="../online-booking.css">
+    <link rel="stylesheet" href="../home.css">
     <meta name="description" content="Book your osteopathy appointment online with Embody Osteopathy Greensborough. Easy scheduling for comprehensive care that fits your lifestyle. Secure your spot today!">
 </head>
-<body>
+<body style="background-color: white;">
+    <nav>
+        <div class="leftNav">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="logo">
+                <a href=".">
+                    <img src="../Assets/Logo.svg" alt="Embody Osteopathy Logo">
+                </a>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about-us/">About Us</a></li>
+            <li><a href="/online-booking/">Online Bookings</a></li>
+            <li><a href="/contact-us/">Contact Us</a></li>
+            </ul>
+        <a class="CTA" href="/online-booking/">Book Now</a>
+    </nav>
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+                burger.classList.toggle('toggle');
+            });
+        }
+        navSlide();
+    </script>
+    <div class="title">
+        <h1>Online Booking</h1>
+    </div>
+
     <iframe id="cliniko-19635792" src="https://embody-healthcare-osteopathy.cliniko.com/bookings?embedded=true" frameborder="0" scrolling="auto" width="100%" height="1000" style="pointer-events: auto;"></iframe>
     <script type="text/javascript">
     window.addEventListener('message', function handleIFrameMessage (e) {
@@ -19,5 +65,30 @@
         e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
     });
     </script>
+
+    <footer>
+        <h3>Contact Information</h3>
+        <p>Tel: 03 9434 1874</p>
+        <p>Fax: 03 9957 8148</p>
+        <p>E-mail: info@embodyhealthcare.com.au</p>
+        <h3>Open Hours</h3>
+        <ol>
+            <li class="dayTime"><p class="day">Monday:</p><p class="time">9:00am - 6:30pm</p></li>
+            <li class="dayTime"><p class="day">Tuesday:</p><p class="time">9:00am - 7:00pm</p></li>
+            <li class="dayTime"><p class="day">Wednesday:</p><p class="time">9:00am - 6:00pm</p></li>
+            <li class="dayTime"><p class="day">Thursday:</p><p class="time">9:00am - 7:15pm</p></li>
+            <li class="dayTime"><p class="day">Friday:</p><p class="time">9:00am - 1:30pm</p></li>
+            <li class="dayTime"><p class="day">Saturday:</p><p class="time">9:00am - 1:00pm</p></li>
+            <li class="dayTime"><p class="day">Sunday:</p><p class="time">Closed</p></li>
+        </ol>
+        <h3>Navigation</h3>
+        <a href=".">Home</a>
+        <a href="about-us/">About Us</a>
+        <a href="online-booking/">Online Bookings</a>
+        <a href="contact-us/">Contact us</a>
+        <div class="lucent">
+            <a href="https://lucent.studio"><u>Site by Lucent Studio</u> ✦</a>
+        </div>
+    </footer>
 </body>
 </html>

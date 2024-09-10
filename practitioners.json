@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Kathryn Williams",
+      "locations": "Eltham & Panton Hill",
+      "headshot": "../Assets/headshots/Kath.png",
+      "description": "Kathryn Williams graduated as an Osteopath from RMIT University in 1998.  Kathryn then spent the next four years working in Osteopathic clinics in Sydney, Melbourne and country Victoria learning from experienced Osteopaths and treating a wide range of conditions in varied groups of people.Kathryn then settled in Melbourne and drawing on her previous years of experience and knowledge set about establishing Embody Healthcare in Greensborough.  She opened the clinic in October 2002 and as the clinic has grown Kathryn has welcomed new Osteopaths and staff to her team.Kathryn now enjoys balancing part-time work with her role as a mum."
+    },
+    {
+      "name": "Kristy Biermans",
+      "locations": "Eltham & Panton Hill",
+      "headshot": "../Assets/headshots/Kristy.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Jessica Thompson",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Jessica.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Andrea McIntyre",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Andrea.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Heather Grossmith",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Heather.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Joanna MacGregor",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Joanna.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Jasmine Laird",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Jasmine.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Amanda Bell",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Amanda.png",
+      "description": "Placeholder description"
+    },
+    {
+      "name": "Breanna Byers",
+      "locations": "Eltham",
+      "headshot": "../Assets/headshots/Breanna.png",
+      "description": "Placeholder description"
+    }
+]
+  

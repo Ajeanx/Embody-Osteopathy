@@ -1,0 +1,130 @@
+/* Practitioners Section Styling */
+.practitioner-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.practitioner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.practitioner img {
+    border-radius: 5px;
+    width: 272px;
+    height: 272px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.locations {
+    color: var(--background-text-color);
+    text-align: left;
+    width: 272px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.name-toggle {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: var(--background-text-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 272px;
+    background-color: var(--secondary-color);
+    padding: 0.5em 1em;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.name-toggle.toggled {
+    margin-bottom: 500px;
+}
+
+.name-toggle:hover{
+    cursor: pointer;
+}
+
+.info {
+    position: relative;
+}
+
+.description {
+    background-color: var(--primary-color);
+    z-index: 0;
+    position: absolute;
+    top: -1px;
+    height: 1em;
+    width: 272px;
+    margin-top: 1px;
+    padding: 18px 24px;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+    overflow-y: hidden;
+}
+
+.description.toggled{
+    padding-top: 70px;
+    height: 440px;
+}
+
+/* Button for Toggling Description */
+.toggle-description {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #8CC63E;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.toggle-description:hover {
+    background-color: #6FAA2D;
+}
+
+.practitioner.expanded .description {
+    display: block; /* Show description on click */
+}
+
+.practitioner.expanded .toggle-description {
+    transform: rotate(180deg); /* Rotate button when expanded */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .practitioner {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .practitioner img {
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+    }
+
+    .info {
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .toggle-description {
+        margin-left: 20px;
+    }
+
+    .practitioner.expanded .info {
+        max-width: 70%; /* Limit description width */
+    }
+}
