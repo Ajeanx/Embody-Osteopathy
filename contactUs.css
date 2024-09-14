@@ -1,0 +1,25 @@
+.contact-us{
+    padding: 31px;
+}
+
+.contact-us a{
+    color: var(--background-text-color);
+}
+
+.contact-us ol {
+    padding-left: 0px;
+    padding-right: 20%;
+}
+
+.contact-us h2 {
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-us h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
