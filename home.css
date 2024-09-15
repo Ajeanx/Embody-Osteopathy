@@ -72,6 +72,7 @@
 }
 
 .section h2 {
+    text-align: center;
     font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 20px;
@@ -226,5 +227,12 @@
 
     .services .service p {
         font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+    .heroBanner h1 {
+        font-size: 1rem;
     }
 }

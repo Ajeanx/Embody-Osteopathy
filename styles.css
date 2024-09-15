@@ -10,19 +10,17 @@
 :root{
     --background-color: #ECECDA;
     --background-text-color: #222222;
-    --primary-color: #75A883;
+    --primary-color: #5E8E66;
     --primary-text-color: #DFE2F6;
-    --primary-color-low-opacity: #75a883c5;
+    --primary-color-low-opacity: #5e8e66c4;
 
-    --secondary-color: #A4C86A;
+    --secondary-color: #A1BC8F;
 
     --accent-color: #F5F5EC;
     --accent-text-color: #FAF9FB;
 
-
     --nav-height: 77px;
     --hero-text-banner-height: 80px;
-
 }
 
 body, html {
@@ -79,7 +77,6 @@ nav a {
     list-style: none;
     transition: opacity 0.2s ease-in-out;
 }
-
 
 .burger {
     display: none;
@@ -239,7 +236,6 @@ footer h3:not(footer h3:first-child) {
     width: 100%;
     text-align: center;
 }
-
 
 
 @media screen and (min-width: 768px) {
