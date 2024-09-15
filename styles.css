@@ -219,7 +219,13 @@ footer .dayTime>* {
     list-style: none;
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
 footer h3 {
+    margin-block: 20px;
     margin-bottom: 20px;
     color: var(--background-text-color);
 }
@@ -239,5 +245,21 @@ footer h3:not(footer h3:first-child) {
 @media screen and (min-width: 768px) {
     nav a.CTA {
         padding: 0.8em 1.5em;
+    }
+
+    .footerSections {
+        width: 80%;
+        min-width: 730px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        align-items: flex-start;
+    }
+
+    .lucent {
+        width: fit-content;
     }
 }
