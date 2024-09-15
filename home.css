@@ -105,12 +105,12 @@
 }
 
 .imageSeparator.fire{
-    background-image: url('/Assets/fire.png');
+    background-image: url('/Embody-Osteopathy/Assets/fire.png');
     background-position-y: -75px;
 }
 
 .imageSeparator.tea{
-    background-image: url('/Assets/tea.png');
+    background-image: url('/Embody-Osteopathy/Assets/tea.png');
 }
 
 .services {
