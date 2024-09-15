@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lexend';
-    src: url('./Assets/fonts/Lexend-Regular.woff2') format('woff2'),
-        url('./Assets/fonts/Lexend-Regular.woff') format('woff');
+    src: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fonts/Lexend-Regular.woff2') format('woff2'),
+        url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fonts/Lexend-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
