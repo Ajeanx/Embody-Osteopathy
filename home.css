@@ -105,13 +105,13 @@
 }
 
 .imageSeparator.fire{
-    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Embody-Osteopathy/Assets/fire.png');
+    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fire.png');
     background-position-y: -75px;
 }
 
 .imageSeparator.tea{
     color: black;
-    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Embody-Osteopathy/Assets/tea.png');
+    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/tea.png');
 }
 
 .services {
