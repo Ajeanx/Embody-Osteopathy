@@ -232,8 +232,12 @@
 }
 
 
-@media screen and (max-width: 385px) {
-    .heroBanner h1 {
-        font-size: 1rem;
+@media screen and (max-width: 375px) {
+    .heroBanner.section.primary hr {
+        width: 26px;
+    }
+    .heroBanner.section.primary h1 {
+        width: 230px;
+        font-size: 2.3rem;
     }
 }
