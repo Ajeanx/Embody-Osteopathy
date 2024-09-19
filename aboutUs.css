@@ -7,6 +7,15 @@ body>h2 {
     text-align: center;
 }
 
+.aboutDesc p {
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+}
+
+.para .desk {
+    display: none;
+}
+
 .imageDivider{
     height: 222px;
     background-position: center;
@@ -44,6 +53,10 @@ body>h2 {
     height: 272px;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+.deskName{
+    display: none;
 }
 
 .locations {
@@ -126,21 +139,97 @@ body>h2 {
 
 /* Responsive Design */
 @media (min-width: 768px) {
+    .aboutDesc {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .para {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .para .mob {
+        display: none;
+    }
+
+    .para .desk {
+        display: block;
+    }
+
+    .para.para2 {
+        grid-column-start: 2;
+    }
+
+    .para.para3 {
+        display: none;
+    }
+
+    .imageDivider {
+        height: 100%;
+    }
+
+    .imageDivider.knee {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    #our-practitioners {
+        padding-block: 50px;
+    }
+
+    .practitioner-list {
+        margin-top: 0;
+        align-items: center;
+    }
+
     .practitioner {
+        width: 85%;
+        max-width: 1050px;
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
+    .practitioner:nth-child(1) {
+        padding-top: 0;
+    }
+
+    .deskName {
+        font-size: 1.5em;
+        display: block;
+    }
+    .name-toggle {
+        display: none;
+    }
+
+    .practitioner {
+        padding: 2rem 1rem;
+    }
+
     .practitioner img {
-        width: 120px;
-        height: 120px;
+        width: 296.59px;
+        height: 296.59px;
         margin-right: 20px;
     }
 
+    .locations {
+        color: var(--primary-color);
+    }
+
     .info {
+        height: 252px;
         text-align: left;
         flex-grow: 1;
+    }
+    
+    .description{
+        background-color: transparent;
+        width: 100%;
+        max-width: 692px;
+        height: 100%;
     }
 
     .toggle-description {
@@ -150,4 +239,9 @@ body>h2 {
     .practitioner.expanded .info {
         max-width: 70%; /* Limit description width */
     }
+
+    .aboutDesc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 }

@@ -9,8 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 practitionerElement.classList.add("practitioner");
 
                 practitionerElement.innerHTML = `
-                    <img src="${practitioner.headshot}" alt="${practitioner.name}'s headshot" class="headshot">
-                    <p class="locations">${practitioner.locations}</p>
+                    <div className="profile">
+                        <img src="${practitioner.headshot}" alt="${practitioner.name}'s headshot" class="headshot">
+                        <p class="locations">${practitioner.locations}</p>
+                        <h4 class="deskName">${practitioner.name}</h4>
+                    </div>
                     <div class="info">
                         <div class="name-toggle">
                             <h4 class="name">${practitioner.name}</h4>
