@@ -48,6 +48,7 @@ nav {
     height: var(--nav-height);
     background-color: var(--background-color);
     text-decoration: none;
+    box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.08);
 }
     
 nav a {
@@ -255,7 +256,8 @@ footer h3:not(footer h3:first-child) {
     }
 
     .footerSections {
-        width: 550px;
+        width: 60%;
+        min-width: 600px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
