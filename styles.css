@@ -10,7 +10,7 @@
 :root{
     --background-color: #ECEADA;
     --background-text-color: #222222;
-    --primary-color: #5E8E66;
+    --primary-color: #75A883;
     --primary-text-color: #DFE2F6;
     --primary-color-low-opacity: #5e8e66c4;
 
@@ -208,7 +208,7 @@ footer {
 }
 
 footer a, footer p:not(.day, .time), footer ol {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 1.8em;
     margin-block: 0px;
     color: var(--background-text-color);
@@ -265,7 +265,7 @@ footer h3:not(footer h3:first-child) {
 
     .footerSections {
         width: 60%;
-        min-width: 600px;
+        min-width: 700px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
