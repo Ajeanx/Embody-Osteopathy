@@ -23,6 +23,9 @@
     --hero-text-banner-height: 80px;
 
     --padding-side: 2em;
+
+    --p-font-size: 0.9rem;
+    --p-line-height: 1.6em;
 }
 
 body, html {
@@ -169,6 +172,11 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.title h1 {
+    font-weight: 100;
+    font-size: 1.8em;
 }
 
 .CTA {

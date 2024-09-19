@@ -79,9 +79,9 @@
 }
 
 .section p{
-    font-size: 0.9rem;
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
     margin-bottom: 20px;
-    line-height: 1.6em;
 }
 
 .section .CTA {

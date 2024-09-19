@@ -7,13 +7,13 @@ body>h2 {
     text-align: center;
 }
 
-.aboutDesc p {
-    padding: 1rem 2rem;
-    font-size: 1.2em;
-}
-
 .para .desk {
     display: none;
+}
+.para {
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    padding: 2em var(--padding-side);
 }
 
 .imageDivider{
@@ -137,6 +137,10 @@ body>h2 {
     transform: rotate(180deg); /* Rotate button when expanded */
 }
 
+.aboutDesc {
+    margin-top: var(--nav-height);
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
     .aboutDesc {
@@ -149,6 +153,11 @@ body>h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .para .initialText {
+        line-height: 2rem;
+        font-weight: 500;
+        font-size: 1.5em;
     }
 
     .para .mob {
