@@ -199,7 +199,7 @@ body>h2 {
         max-width: 1050px;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .practitioner:nth-child(1) {
@@ -225,20 +225,25 @@ body>h2 {
     }
 
     .locations {
+        margin: 0;
+        margin-bottom: 10px;
         color: var(--primary-color);
     }
 
     .info {
+        width: 560px;
         height: 252px;
         text-align: left;
-        flex-grow: 1;
+        /* flex-grow: 1; */
     }
     
     .description{
         background-color: transparent;
-        width: 100%;
-        max-width: 692px;
+        /* width: 100%; */
+        width: 560px;
         height: 100%;
+        font-size: 0.9rem;
+        line-height: 1.7em;
     }
 
     .toggle-description {
