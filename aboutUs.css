@@ -74,7 +74,7 @@ body>h2 {
     z-index: 1;
     font-size: 1.5rem;
     color: var(--background-text-color);
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px;
     width: 272px;
     background-color: var(--secondary-color);
