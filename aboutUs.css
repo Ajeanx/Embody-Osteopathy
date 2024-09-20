@@ -23,11 +23,11 @@ body>h2 {
 }
 
 .imageDivider.massage{
-    background-image: url('/Assets/massage.png');
+    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/massage.png');
 }
 
 .imageDivider.knee {
-    background-image: url('/Assets/knee.png');
+    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/knee.png');
 }
 
 /* Practitioners Section Styling */
