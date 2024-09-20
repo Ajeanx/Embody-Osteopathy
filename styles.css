@@ -109,6 +109,11 @@ nav a {
         overflow-x: hidden;
     }
 
+    nav {
+        padding-inline: 10px;
+        width: calc(100% - (10px * 2));
+    }
+
     .nav-links {
         z-index: 2;
         background: var(--primary-color-low-opacity);
