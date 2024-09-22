@@ -114,11 +114,6 @@ nav a {
         overflow-x: hidden;
     }
 
-    nav {
-        /* padding-inline: 20px; */
-        /* width: calc(100% - (20px * 2)); */
-    }
-
     .nav-links {
         z-index: 2;
         background: var(--primary-color-low-opacity);
@@ -163,7 +158,7 @@ nav a {
 }
 
 .toggle .line1 {
-    transform: translateY(12px) rotate(-45deg) ;
+    transform: translateY(8px) rotate(-45deg) ;
 }
 
 .toggle .line2 {
@@ -171,7 +166,7 @@ nav a {
 }
 
 .toggle .line3 {
-    transform: translateY(-10px) rotate(45deg)
+    transform: translateY(-8px) rotate(45deg)
 }
 
 .title{
