@@ -16,6 +16,10 @@ body>h2 {
     padding: 2em var(--padding-side);
 }
 
+.para a {
+    color: var(--background-text-color);
+}
+
 .imageDivider{
     height: 222px;
     background-position: center;
