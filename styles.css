@@ -1,11 +1,10 @@
-@font-face {
-    font-family: 'Lexend';
-    src: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fonts/Lexend-Regular.woff2') format('woff2'),
-        url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fonts/Lexend-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* FIXME: Shadow on top of safari browser */
+
+/* Shit to do: */
+/* Add osteopathy below Healthcare on hero */
+/*  */
 
 :root{
     --background-color: #ECEADA;
@@ -29,14 +28,13 @@
 }
 
 body, html {
-    font-family: 'Lexend';
+    font-family: 'Lexend', sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: var(--background-color);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    font-weight: normal !important;
     margin-block: 0px;
 }
 
@@ -88,14 +86,15 @@ nav a {
 .burger {
     display: none;
     cursor: pointer;
+    margin-right: calc(var(--padding-side) - 8px);
 }
 
 .burger div {
-    width: 40px;
+    width: 30px;
     height: 3px;
     border-radius: 2px;
     background-color: var(--background-text-color);
-    margin: 8px;
+    margin-block: 5px;
     transition: all 0.3s ease;
 }
 
@@ -106,13 +105,18 @@ nav a {
 }
 
 @media screen and (max-width: 768px) {
+    :root{
+        --nav-height: 85px;
+        --p-font-size: 1.1rem;
+    }
+
     body {
         overflow-x: hidden;
     }
 
     nav {
-        padding-inline: 10px;
-        width: calc(100% - (10px * 2));
+        /* padding-inline: 20px; */
+        /* width: calc(100% - (20px * 2)); */
     }
 
     .nav-links {
@@ -181,7 +185,7 @@ nav a {
 }
 
 .title h1 {
-    font-weight: 100;
+    font-weight: 500;
     font-size: 1.8em;
 }
 

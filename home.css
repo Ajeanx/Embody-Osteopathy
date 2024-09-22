@@ -31,7 +31,7 @@
     position: absolute;
     top: 28px;
     font-size: 1.1rem;
-    font-weight: 100;
+    font-weight: 500;
     left: 30px;
 }
 
@@ -46,13 +46,14 @@
 }
 
 .heroBanner.section h1 {
+    font-family: "Space Grotesk", sans-serif;
     color: var(--accent-color);
     position: absolute;
     width: 287px;
     text-align: right;
     top: 26px;
     left: 90px;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 3rem;
     line-height: 1em;
     letter-spacing: 0.01em;
