@@ -99,7 +99,7 @@ body>h2 {
 }
 
 .name-toggle.toggled {
-    margin-bottom: 520px;
+    margin-bottom: 590px;
 }
 
 .name-toggle:hover{
@@ -122,11 +122,12 @@ body>h2 {
     border-radius: 40px;
     transition: all 0.3s ease-in-out;
     overflow-y: hidden;
+    line-height: 1.5em;
 }
 
 .description.toggled{
     padding-top: 60px;
-    height: 470px;
+    height: 550px;
 }
 
 /* Button for Toggling Description */
