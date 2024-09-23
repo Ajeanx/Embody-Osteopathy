@@ -117,7 +117,7 @@
 
 .imageSeparator.fire{
     background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fire.png');
-    background-position-y: -75px;
+    background-position-y: 50%;
 }
 
 .imageSeparator.tea{
@@ -227,7 +227,7 @@
     .imageSeparator.imageSeparator.fire{
         grid-row: 2;
         grid-column-start: 1;
-        background-position-y: 0;
+        /* background-position-y: 0; */
     }
 
     .sections .section:not(.primary) {
