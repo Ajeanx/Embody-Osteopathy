@@ -53,10 +53,19 @@
     text-align: right;
     top: 26px;
     left: 90px;
-    font-weight: 400;
+    font-weight: 5 00;
     font-size: 3rem;
     line-height: 1em;
     letter-spacing: 0.01em;
+}
+.heroBanner.section h3 {
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--secondary-color);
+    position: absolute;
+    top: 120px;
+    left: 245px;
+    font-size: 1.45em;
+    
 }
 
 .section {
@@ -192,6 +201,12 @@
         left: 38.5vw
     }
 
+    .heroBanner.section h3 {
+        top: min(calc((100svh - var(--nav-height) - var(--hero-text-banner-height) - 200px) / 2.8 + 200px), 220px);
+        left: 38.5vw;
+        color: var(--primary-color);
+    }
+
     .services {
         margin-top: 0;
         display: flex;
@@ -249,5 +264,10 @@
     .heroBanner.section.primary h1 {
         width: 230px;
         font-size: 2.3rem;
+    }
+    .heroBanner.section.primary h3 {
+        font-size: 1.1em;
+        top: 100px;
+        left: 217px;
     }
 }

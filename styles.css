@@ -3,8 +3,15 @@
 /* FIXME: Shadow on top of safari browser */
 
 /* Things to do: */
-/* Add osteopathy below Healthcare on hero */
-/*  */
+/* DONE MOB Add osteopathy below Healthcare on hero */
+/* make hero title font medium too */
+/* footer spacing */
+/* Burger menu fade in */
+/* About us headings de-bolded and font size made a bit bigger */
+/* Fix invisible paragraph spacing in About Us + add more space above Our Practitioners */
+/* fix spacing on dropdown menus + increasing line spacing a tad */
+/* Google map embed */
+/* Make cintact us heading bold on page and subheadings regular + bit smaller */
 
 :root{
     --background-color: #ECEADA;
@@ -19,7 +26,7 @@
     --accent-text-color: #FAF9FB;
 
     --nav-height: 65px;
-    --hero-text-banner-height: 80px;
+    --hero-text-banner-height: 95px;
 
     --padding-side: 2em;
 
@@ -91,8 +98,8 @@ nav a {
 
 .burger div {
     width: 30px;
-    height: 3px;
-    border-radius: 2px;
+    height: 2.5px;
+    /* border-radius: 2px; */
     background-color: var(--background-text-color);
     margin-block: 5px;
     transition: all 0.3s ease;
