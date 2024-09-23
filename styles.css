@@ -5,7 +5,8 @@
 /* Things to do: */
 /* DONE Add osteopathy below Healthcare on hero */
 /* DONE make hero title font medium too */
-/* footer spacing */
+/* DONE footer spacing */
+/* footer time alignment */
 /* Burger menu fade in */
 /* About us headings de-bolded and font size made a bit bigger */
 /* Fix invisible paragraph spacing in About Us + add more space above Our Practitioners */
@@ -236,6 +237,8 @@ footer .dayTime>* {
 }
 
 .time {
+    width: 150px;
+    text-align: left;
     margin-left: 20px;
 }
 
