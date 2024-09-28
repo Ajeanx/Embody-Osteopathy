@@ -7,10 +7,26 @@ body>h2 {
     text-align: center;
 }
 
+body {
+    width: 100vw;
+}
+
+.aboutWrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutDesc {
+    max-width: 1200px;
+}
+
 .para .desk {
     display: none;
 }
 .para {
+    /* min-height: 300px; */
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
     padding: 2em var(--padding-side);
