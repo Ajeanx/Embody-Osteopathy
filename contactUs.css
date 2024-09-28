@@ -13,13 +13,15 @@
 }
 
 .contact-us h2 {
-    font-size: 1.8rem;
+    font-weight: 500;
+    font-size: 1.4rem;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 .contact-us h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-top: 25px;
     margin-bottom: 10px;
 }
