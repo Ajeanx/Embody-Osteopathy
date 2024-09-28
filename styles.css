@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-/* FIXME: Shadow on top of safari browser */
-
-/* Things to do: */
-/* DONE Add osteopathy below Healthcare on hero */
-/* DONE make hero title font medium too */
-/* DONE footer spacing */
-/* DONE footer time alignment */
-/* ASK ABBOT! Burger menu fade in */
-/* DONE About us headings de-bolded and font size made a bit bigger */
-/* DONE Fix invisible paragraph spacing in About Us + add more space above Our Practitioners */
-/* DONE fix spacing on dropdown menus + increasing line spacing a tad */
-/* HALF DONE Google map embed */
-/* DONE Make contact us heading bold on page and subheadings regular + bit smaller */
 
 :root{
     --background-color: #ECEADA;
@@ -81,7 +68,6 @@ nav a {
 }
 
 .nav-links {
-    opacity: 0;
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -125,7 +111,7 @@ nav a {
     }
 
     .nav-links {
-        z-index: 2;
+        z-index: -2;
         background: var(--primary-color-low-opacity);
         box-shadow: 8px 0px 15px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(22px);
@@ -137,7 +123,8 @@ nav a {
         left: 0px;
         height: 100vh;
         top: 0;
-        display: flex;
+        display: none;
+        opacity: 0;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -170,7 +157,9 @@ nav a {
 }
 
 .nav-active {
+    display: flex;
     opacity: 1;
+    z-index: 2;
     transform: translateX(0%);
 }
 
