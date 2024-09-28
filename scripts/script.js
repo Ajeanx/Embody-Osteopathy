@@ -1,24 +1,24 @@
-console.log("S")
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    console.log("SEEEE")
-    anchor.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
-
-        const targetId = this.getAttribute("href").substring(1); // Get the target ID from the href attribute
-        const targetElement = document.getElementById(targetId);
-
-        // Get the height of the navbar from the CSS variable
-        const navHeight = getComputedStyle(document.documentElement).getPropertyValue('--nav-height');
-
-        if (targetElement) {
-        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; 
+window.addEventListener("load", function() {
+    // Check if the URL contains an anchor
+    const hash = window.location.hash;
+    
+    if (hash) {
+      const targetElement = document.querySelector(hash);
+  
+      // Get the height of the navbar from the CSS variable
+      const navHeight = getComputedStyle(document.documentElement).getPropertyValue('--nav-height');
+  
+      if (targetElement) {
+        // Scroll the page to the target element, offset by the navbar height
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - parseInt(navHeight);
-
+  
+        // Adjust the scroll position
         window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth" // Smooth scroll effect
+          top: offsetPosition,
+          behavior: "smooth" // Optional smooth scroll
         });
-        }
-    });
-});
+      }
+    }
+  });
   
