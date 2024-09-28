@@ -158,6 +158,15 @@ nav a {
         display: block;
         z-index: 3;
     }
+
+    nav {
+        padding-inline: 14px;
+        width: calc(100% - 14px * 2);
+    }
+
+    nav .leftNav {
+        margin-left: calc(var(--padding-side) - 14px);
+    }
 }
 
 .nav-active {
