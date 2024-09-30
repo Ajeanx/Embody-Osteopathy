@@ -10,7 +10,7 @@
 
     --secondary-color: #A8C694;
 
-    --accent-color: #F5F5EC;
+    --accent-color: #ECECDA;
     --accent-text-color: #FAF9FB;
 
     --nav-height: 65px;
@@ -100,7 +100,7 @@ nav a {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     :root{
         --nav-height: 75px;
         --p-font-size: 1.1rem;
@@ -272,7 +272,7 @@ footer h3:not(footer .contact h3) {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
     :root {
         --padding-side: 4.2em;
     }
