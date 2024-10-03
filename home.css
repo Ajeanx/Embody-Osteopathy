@@ -12,7 +12,7 @@
     min-height: 300px;
     text-align: center;
     color: #F5F5EC;
-    background: url('Assets/reception.png');
+    background: url('Assets/reception.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -119,13 +119,13 @@
 }
 
 .imageSeparator.fire{
-    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fire.png');
+    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/fire.webp');
     background-position-y: 50%;
 }
 
 .imageSeparator.tea{
     color: black;
-    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/tea.png');
+    background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/tea.webp');
 }
 
 .services {
