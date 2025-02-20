@@ -181,6 +181,14 @@
     }
 }
 
+.service img {
+    height: 100px;
+}
+@media screen and (max-width: 550px) {
+    .service img {
+        height: 80px;
+    }
+}
 
 @media screen and (min-width: 850px) {
     .section.primary {
@@ -267,7 +275,7 @@
         text-align: left;
     }
 
-    .sections .section.primary {
+    .sections .section {
         align-items: flex-start;
         text-align: left;
     }
@@ -277,9 +285,7 @@
         height: 110px;
     }
 
-    .service-img-container img {
-        height: 70px;
-    }
+    
 
     .services .service p {
         margin-top: 1.3em;
