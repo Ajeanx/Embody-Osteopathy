@@ -4,12 +4,17 @@ body>p {
 }
 
 body>h2 {
+    margin-top: 15px;
+    margin-bottom: 36.2px;
+    padding-inline: 50px;
     text-align: center;
 }
 
 body {
     width: 100vw;
+    overflow-x: hidden;
 }
+
 
 .aboutWrapper {
     width: 100vw;
@@ -49,6 +54,51 @@ body {
 .imageDivider.knee {
     background-image: url('https://ertersy40.github.io/Embody-Osteopathy/Assets/knee.png');
 }
+
+.commonIssues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.issue{
+    box-sizing: border-box;
+    padding-inline: 50px;
+    display: flex;
+    align-items: center;
+    gap: 36.2px;
+    margin-block: 3em;
+    max-width: 980px;
+    width: 100%;
+}
+
+.issue:first-child {
+    margin-top: 0;
+}
+
+.issueImage {
+    min-height: 122px;
+    max-height: 122px;
+    min-width: 122px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.issueImage img {
+    height: 60%;
+}
+
+.issueDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
 
 /* Practitioners Section Styling */
 .practitioner-list {
@@ -134,10 +184,10 @@ body {
     height: 1em;
     width: 272px;
     margin-top: 1px;
-    padding: 15.73435px 16.2px;
+    padding-inline:  16.2px;
     border-radius: 40px;
-    transition: all 0.3s ease-in-out;
     overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
     line-height: 1.5em;
 }
 
@@ -179,12 +229,18 @@ body {
     font-weight: 500;
     font-size: 1.5em;
 }
+
 /* Responsive Design */
 @media (min-width: 768px) {
     .aboutDesc {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .description.toggled{
+        padding: 15.73435px 16.2px;
+        height: 100%;
     }
 
     .para {
@@ -218,7 +274,7 @@ body {
         grid-column-start: 1;
     }
 
-    #our-practitioners {
+    #our-practitioners, #what-do-osteopaths-treat {
         font-size: 2rem;
         padding-block: 50px;
     }
@@ -271,13 +327,20 @@ body {
         /* flex-grow: 1; */
     }
     
-    .description{
+    .description, .issue .issueDescription{
         background-color: transparent;
-        /* width: 100%; */
-        width: 560px;
         height: 100%;
-        font-size: 0.9rem;
-        line-height: 1.7em;
+        font-size: 1rem;
+        line-height: 1.5em;
+        width: 100%;
+    }
+    .description {
+        max-width: 620px;
+        width: 100%;
+    }
+
+    .issueDescription p {
+        width: 100%;
     }
 
     .toggle-description {
@@ -292,4 +355,20 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+}
+
+@media (max-width: 580px) {
+    .issue {
+        margin-block: 1.5em;
+        flex-direction: column;
+    }
+    .issueImage {
+        min-height: 150px;
+        max-height: 150px;
+        min-width: 150px;
+    }
+
+    .issueImage img {
+        height: 100px;
+    }
 }

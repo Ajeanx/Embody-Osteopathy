@@ -1,6 +1,6 @@
 :root{
     --background-color: #ECEADA;
-    --background-text-color: #222222;
+    --background-text-color: #0F0F0F;
     --primary-color: #75A883;
     --primary-text-color: #DFE2F6;
     --primary-color-low-opacity: #5e8e66c4;
@@ -21,6 +21,7 @@
 
 body, html {
     font-family: 'Lexend', sans-serif;
+    color: red;
     margin: 0px;
     padding: 0px;
     background-color: var(--background-color);
@@ -64,6 +65,11 @@ nav a {
     font-size: 20px;
 }
 
+.logo a {
+    display: flex;
+    height: 100%;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -101,10 +107,6 @@ nav a {
     :root{
         --nav-height: 75px;
         --p-font-size: 1.1rem;
-    }
-
-    body {
-        overflow-x: hidden;
     }
 
     .nav-links {
@@ -154,6 +156,7 @@ nav a {
 }
 
 .nav-active {
+    gap: 12px;
     display: flex;
     opacity: 1;
     z-index: 2;
@@ -289,8 +292,11 @@ footer h3:not(footer .contact h3) {
     footer {
         align-items: flex-start;
     }
+    footer h3 {
+        margin-top: 30px;
+    }
 
     .lucent {
-        width: fit-content;
+        text-align: end;
     }
 }

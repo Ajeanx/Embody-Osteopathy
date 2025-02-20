@@ -90,11 +90,18 @@
 }
 
 .section p{
+    
     color: var(--background-text-color);
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
     line-break: break-all;
+    
     margin-bottom: 20px;
+}
+
+.section>p{
+    /* font-size: 1.1rem; */
+    /* font-weight: 300; */
 }
 
 .section .CTA {
@@ -283,7 +290,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     .heroBanner.section h2 {
         display: none;
         font-size: 0.95em;
