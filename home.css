@@ -145,7 +145,6 @@
 }
 
 .service {
-    background-color: var(--pri);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,9 +170,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent-color);
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border-radius: 20px;
 }
 
