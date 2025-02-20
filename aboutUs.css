@@ -4,8 +4,8 @@ body>p {
 }
 
 body>h2 {
-    margin-top: 15px;
-    margin-bottom: 36.2px;
+    margin-top: 45px;
+    margin-bottom: 6.2px;
     padding-inline: 50px;
     text-align: center;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .aboutDesc {
-    max-width: 1200px;
+    max-width: 1500px;
 }
 
 .para .desk {
@@ -32,7 +32,7 @@ body {
 }
 .para {
     /* min-height: 300px; */
-    font-size: var(--p-font-size);
+    font-size: 1rem;
     line-height: var(--p-line-height);
     padding: 2em var(--padding-side);
 }
@@ -67,13 +67,25 @@ body {
     display: flex;
     align-items: center;
     gap: 36.2px;
-    margin-block: 3em;
+    margin-block: 2.1em;
     max-width: 980px;
     width: 100%;
 }
 
+.issueDescription p {
+    padding: 0;
+}
+
+.issueDescription h4 {
+    font-size: 1rem;
+}
+
 .issue:first-child {
     margin-top: 0;
+}
+
+.issue:last-child {
+    margin-bottom: 0;
 }
 
 .issueImage {
@@ -227,11 +239,11 @@ body {
 .para .initialText {
     line-height: 2rem;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: 770px) {
     .aboutDesc {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -333,6 +345,7 @@ body {
         font-size: 1rem;
         line-height: 1.5em;
         width: 100%;
+        overflow-y: visible;
     }
     .description {
         max-width: 620px;
