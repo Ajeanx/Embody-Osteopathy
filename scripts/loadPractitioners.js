@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Now attach the event listeners after the elements are in the DOM
             const nameToggles = document.querySelectorAll('.name-toggle');
+            // FIXME: Toggled items keep padding top in wider view
     
             nameToggles.forEach(nameToggle => {
                 nameToggle.addEventListener('click', () => {
