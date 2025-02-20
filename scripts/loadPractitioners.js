@@ -31,20 +31,28 @@ document.addEventListener("DOMContentLoaded", () => {
     
             nameToggles.forEach(nameToggle => {
                 nameToggle.addEventListener('click', () => {
-                    const descriptionElement = nameToggle.closest('.practitioner').querySelector('.description');
-                    const toggleIcon = nameToggle.querySelector('.toggle-icon'); // Grab the +/− icon
-
-                    // Toggle the "toggled" class on both name-toggle div and description
-                    nameToggle.classList.toggle('toggled');
-                    descriptionElement.classList.toggle('toggled');
+                    const practitionerElement = nameToggle.closest('.practitioner');
+                    const descriptionElement = practitionerElement.querySelector('.description');
+                    const toggleIcon = nameToggle.querySelector('.toggle-icon');
                     
-                    // Change the + to − when toggled
-                    if (toggleIcon.innerHTML === '+') {
-                        toggleIcon.innerHTML = '−'; // Change to minus
+                    // Check if element is currently expanded (height not zero)
+                    if (descriptionElement.style.height && descriptionElement.style.height !== '0px') {
+                        // Collapse the description and reset margin-bottom
+                        descriptionElement.style.paddingTop = '0px';
+                        descriptionElement.style.height = '0px';
+                        nameToggle.style.marginBottom = '0px';
+                        toggleIcon.innerHTML = '+';
                     } else {
-                        toggleIcon.innerHTML = '+'; // Change back to plus
+                        // Expand the description: dynamically set the height to scrollHeight
+                        const contentHeight = descriptionElement.scrollHeight;
+                        descriptionElement.style.height = contentHeight + 45 + 'px';
+                        descriptionElement.style.paddingTop = '55px';
+                        // Set .name-toggle's margin-bottom to match the content's height
+                        nameToggle.style.marginBottom = contentHeight + 55 + 'px';
+                        toggleIcon.innerHTML = '−';
                     }
                 });
+                
             });
         })
         .catch(error => console.error('Error fetching practitioners:', error));
