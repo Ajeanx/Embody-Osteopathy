@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     const toggleIcon = nameToggle.querySelector('.toggle-icon');
                     
                     // Check if element is currently expanded (height not zero)
-                    if (descriptionElement.style.height && descriptionElement.style.height !== '0px') {
+                    if (descriptionElement.style.height && descriptionElement.style.height !== '45px') {
                         // Collapse the description and reset margin-bottom
                         descriptionElement.style.paddingTop = '0px';
-                        descriptionElement.style.height = '0px';
+                        descriptionElement.style.height = '45px';
                         nameToggle.style.marginBottom = '0px';
                         toggleIcon.innerHTML = '+';
                     } else {
